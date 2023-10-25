@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class PrimeNumberList {
 
@@ -29,6 +30,11 @@ public class PrimeNumberList {
 
         PrimeNumberList primeTime = new PrimeNumberList();
         List<Integer> primes = primeTime.generatePrimes();
-        System.out.println(primes);
+        Iterator<Integer> iterator = primes.iterator();
+        
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
+    
 }
